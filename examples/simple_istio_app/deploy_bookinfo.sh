@@ -27,9 +27,9 @@ echo ........ Getting KubeConfig
 scriptDir="$( cd "$(dirname "$0")" ; pwd -P )"
 kubeConfigPath="$scriptDir/config"
 
-az aks get-credentials --resource-group $RESOURCE_GROUP_NAME --name $CLUSTER_NAME --file kubeConfigPath
+az aks get-credentials --resource-group $RESOURCE_GROUP_NAME --name $CLUSTER_NAME --file $kubeConfigPath
 
-export KUBECONFIG=kubeConfigPath
+export KUBECONFIG=$kubeConfigPath
 echo ........
 
 echo ........ Downloading Istio locally - **IGNORE instructions
