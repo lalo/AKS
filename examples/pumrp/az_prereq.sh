@@ -103,7 +103,7 @@ echo ........
 
 echo ........ cloning
 
-#git clone https://github.com/Microsoft/PartsUnlimitedMRPmicro.git
+git clone https://github.com/Microsoft/PartsUnlimitedMRPmicro.git
 echo ........
 
 echo ........ building and pushing zipkin image
